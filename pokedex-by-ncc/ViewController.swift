@@ -127,6 +127,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         view.endEditing(true)
     }
+    
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == nil || searchBar.text == "" {
             inSearchMode = false
