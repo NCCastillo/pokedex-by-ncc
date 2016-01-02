@@ -189,6 +189,9 @@
                                             <constraint firstAttribute="width" constant="40" id="dvO-Sr-Lwf"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="qCk-YL-o9K" eventType="touchUpInside" id="Zse-7z-aOm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -224,7 +227,7 @@
                                                     <constraint firstAttribute="height" constant="120" id="LUQ-ea-x1A"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-Y8-bPb">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-Y8-bPb">
                                                 <rect key="frame" x="124" y="0.0" width="436" height="120"/>
                                                 <string key="text">They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark. They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -382,7 +385,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttackLbl" destination="e3P-zD-R1x" id="ppT-4m-M9M"/>
+                        <outlet property="currentEvoImg" destination="8Hw-rk-Vmr" id="tTC-BD-x3f"/>
+                        <outlet property="defenseLbl" destination="fzp-pf-hRR" id="66U-0e-JUH"/>
+                        <outlet property="descriptionLbl" destination="zYU-Y8-bPb" id="fpt-z2-YhJ"/>
+                        <outlet property="evoLbl" destination="7Yi-6b-SZR" id="jTC-EL-fUU"/>
+                        <outlet property="heightLbl" destination="BJl-nA-HYD" id="A3Z-0E-JFY"/>
+                        <outlet property="mainImg" destination="HAe-RC-eZX" id="iZk-um-Ddb"/>
                         <outlet property="nameLbl" destination="3xL-De-VDt" id="EEC-nk-JkD"/>
+                        <outlet property="nextEvoImg" destination="n5u-1j-LbF" id="Jng-dh-VqM"/>
+                        <outlet property="pokedexLbl" destination="uoz-ww-qfO" id="F5M-6i-2R3"/>
+                        <outlet property="typeLbl" destination="bFg-Ov-HUM" id="r54-xV-kht"/>
+                        <outlet property="weightLbl" destination="pcD-hi-8US" id="BM5-hA-VFu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GP0-mn-Hpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
