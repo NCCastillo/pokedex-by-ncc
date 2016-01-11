@@ -26,8 +26,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collection.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.Done
-        
-//        initAudio()
+
+        // uncomment/comment out/in this line to get back/remove sound
+        initAudio()
         parsePokemonCsv()
         
     }
